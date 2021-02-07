@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang = "en">
-<style type="text/css">
-    h1 {
-      margin-left: 100px;
-    }
-    h3 {
-      font-size: 20px;
-      margin-left: 100px;
-    } 
-    button {
-      margin-left: 100px;
-    }
-</style>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
 <body>
   <h1>Tinh Tien</h1>
-  <h3>Cafe = <input aria-label="Cafe" class="input-qty" max="999" min="0" name="Cafe" id = "Cafe" type="number" value="0">                      </h3>
-  <h3>Cafe Sữa = <input aria-label="CafeMilk" class="input-qty" max="999" min="0" name="CafeMilk" id = "CafeMilk" type="number" value="0">      </h3>
-  <h3>Trà Đường = <input aria-label="tea" class="input-qty" max="999" min="0" name="tea" id = "tea" type="number" value="0">                    </h3>
-  <h3>Lipton = <input aria-label="lipton" class="input-qty" max="999" min="0" name="lipton" id = "lipton" type="number" value="0">              </h3>
-  <h3>Đá Chanh = <input aria-label="lemon" class="input-qty" max="999" min="0" name="lemon" id = "lemon" type="number" value="0">               </h3>
-  <h3>Rau Má = <input aria-label="rauma" class="input-qty" max="999" min="0" name="rauma" id = "rauma" type="number" value="0">                 </h3>
-  <h3>Rau má sữa = <input aria-label="raumasua" class="input-qty" max="999" min="0" name="raumasua" id = "raumasua" type="number" value="0">    </h3>
-  <h3>Rau má dừa = <input aria-label="raumadua" class="input-qty" max="999" min="0" name="raumadua" id = "raumadua" type="number" value="0">    </h3>
-  <h3>Dừa tươi = <input aria-label="Dua" class="input-qty" max="999" min="0" name="Dua" id = "Dua" type="number" value="0">                     </h3>
-  <h3>Dừa tẩy = <input aria-label="Duatay" class="input-qty" max="999" min="0" name="Duatay" id = "Duatay" type="number" value="0">             </h3>
-  <h3>Cam Vắt = <input aria-label="orange" class="input-qty" max="999" min="0" name="orange" id = "orange" type="number" value="0">             </h3>
-  <h3> Cam Sữa = <input aria-label="orangemilk" class="input-qty" max="999" min="0" name="orangemilk" id = "orangemilk" type="number" value="0"></h3>
-  <h3> Đá me = <input aria-label="dame" class="input-qty" max="999" min="0" name="dame" id = "dame" type="number" value="0">                    </h3>
-<button onclick="getInfo()">tinh tien</button>
-<script type="text/javascript" src = "x.js"> </script>
-<button onclick="resetInfo()">Reset</button>
-<h1> Tổng Tiền: <span id="Total">0</span> VNĐ</h1>
+
+  <h3>Cafe :
+    <input aria-label="Cafe" class="input-qty" max="999" min="0" name="Cafe" id="Cafe" type="number" value="0">
+  </h3>
+
+  <h3>Cafe Sữa = <input aria-label="CafeMilk" class="input-qty" max="999" min="0" name="CafeMilk" id="CafeMilk" type="number" value="0"> </h3>
+  <h3>Trà Đường = <input aria-label="tea" class="input-qty" max="999" min="0" name="tea" id="tea" type="number" value="0"> </h3>
+  <h3>Lipton = <input aria-label="lipton" class="input-qty" max="999" min="0" name="lipton" id="lipton" type="number" value="0"> </h3>
+  <h3>Đá Chanh = <input aria-label="lemon" class="input-qty" max="999" min="0" name="lemon" id="lemon" type="number" value="0"> </h3>
+  <h3>Rau Má = <input aria-label="rauma" class="input-qty" max="999" min="0" name="rauma" id="rauma" type="number" value="0"> </h3>
+  <h3>Rau má sữa = <input aria-label="raumasua" class="input-qty" max="999" min="0" name="raumasua" id="raumasua" type="number" value="0"> </h3>
+  <h3>Rau má dừa = <input aria-label="raumadua" class="input-qty" max="999" min="0" name="raumadua" id="raumadua" type="number" value="0"> </h3>
+  <h3>Dừa tươi = <input aria-label="Dua" class="input-qty" max="999" min="0" name="Dua" id="Dua" type="number" value="0"> </h3>
+  <h3>Dừa tẩy = <input aria-label="Duatay" class="input-qty" max="999" min="0" name="Duatay" id="Duatay" type="number" value="0"> </h3>
+  <h3>Cam Vắt = <input aria-label="orange" class="input-qty" max="999" min="0" name="orange" id="orange" type="number" value="0"> </h3>
+  <h3> Cam Sữa = <input aria-label="orangemilk" class="input-qty" max="999" min="0" name="orangemilk" id="orangemilk" type="number" value="0"></h3>
+  <h3> Đá me = <input aria-label="dame" class="input-qty" max="999" min="0" name="dame" id="dame" type="number" value="0"> </h3>
+  <h3> Nước ngọt = <input aria-label="nuocngot" class="input-qty" max="999" min="0" name="nuocngot" id="nuocngot" type="number" value="0"> </h3>
+  <h3> Nước suối = <input aria-label="nuocsuoi" class="input-qty" max="999" min="0" name="nuocsuoi" id="nuocsuoi" type="number" value="0"> </h3>
+  <h3> Tẩy thêm = <input aria-label="taythem" class="input-qty" max="999" min="0" name="taythem" id="taythem" type="number" value="0"> </h3>
+  <h3> Mỳ trứng = <input aria-label="mytrung" class="input-qty" max="999" min="0" name="mytrung" id="mytrung" type="number" value="0"> </h3>
+  <h3> Ốp la cá mòi = <input aria-label="oplacamoi" class="input-qty" max="999" min="0" name="oplacamoi" id="oplacamoi" type="number" value="0"></h3>
+  <h3> Ba số = <input aria-label="baso" class="input-qty" max="999" min="0" name="baso" id="baso" type="number" value="0"> </h3>
+  <h3> Mèo = <input aria-label="conmeo" class="input-qty" max="999" min="0" name="conmeo" id="conmeo" type="number" value="0"> </h3>
+
+  <button onclick="getInfo()">Tính tiền</button>
+  <script src="x.js"> </script>
+  <h2> Tổng Tiền: <span id="Total">0</span> VNĐ</h2>
+
 </body>
 
-
-</style>
 </html>

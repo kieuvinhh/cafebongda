@@ -27,6 +27,7 @@ const Price = {
 };
 
 function getInfo() {
+  console.log('123');
   const inputArray = document.querySelectorAll("input");
   for (const item of inputArray) {
     var temp = 0;
@@ -38,4 +39,19 @@ function getInfo() {
   }
   document.getElementById("Total").innerHTML = prices;
   prices = 0;
+}
+
+function minus(name) {
+  let x = document.getElementById(name).value;
+  x = parseInt(x) - 1;
+  if(x < 0) x = 0;
+  document.getElementById(name).value = x;
+  console.log(x);
+}
+
+function add(name) {
+  let x = document.getElementById(name).value;
+  x = parseInt(x) + 1;
+  document.getElementById(name).value = x;
+  console.log(x);
 }

@@ -1,13 +1,18 @@
 h1 {
-  margin-left: 100px;
+    margin-left: 100px;
 }
+
 h3 {
-  font-size: 20px;
-  margin-left: 100px;
+    font-size: 20px;
+    margin-left: 100px;
 }
 
 button {
-  margin-left: 10px;
-  padding: 3px 10px;
-  background-color: #F002;
+    margin-left: 10px;
+    padding: 3px 10px;
+    background-color: #F002;
+}
+
+input {
+    font-size: 20px;
 }

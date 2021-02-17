@@ -39,9 +39,9 @@ function getInfo() {
     prices = 0;
 }
 
-function minus(name, amount) {
+function minus(name) {
     let x = document.getElementById(name).value;
-    x = parseInt(x) - parseInt(amount);
+    x = parseInt(x) - 1;
     if (x < 0) x = 0;
     document.getElementById(name).value = x;
 }

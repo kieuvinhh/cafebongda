@@ -8,7 +8,7 @@ const Price = {
     tea: 10000,
     lipton: 13000,
     lemon: 10000,
-    rauma: 18000,
+    rauma: 15000,
     raumasua: 20000,
     raumadua: 20000,
     Dua: 20000,

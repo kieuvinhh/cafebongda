@@ -26,7 +26,6 @@ const Price = {
 };
 
 function getInfo() {
-    console.log('123');
     const inputArray = document.querySelectorAll("input");
     for (const item of inputArray) {
         var temp = 0;

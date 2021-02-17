@@ -39,15 +39,16 @@ function getInfo() {
     prices = 0;
 }
 
-function minus(name) {
+function minus(name, amount) {
     let x = document.getElementById(name).value;
-    x = parseInt(x) - 1;
+    x = parseInt(x) - parseInt(amount);
     if (x < 0) x = 0;
     document.getElementById(name).value = x;
 }
 
-function add(name) {
+function add(name, amount) {
+	console.log("123");
     let x = document.getElementById(name).value;
-    x = parseInt(x) + 1;
+    x = parseInt(x) + parseInt(amount);
     document.getElementById(name).value = x;
 }

@@ -4,7 +4,7 @@ var prices = 0;
 
 const Price = {
     Cafe: 13000,
-    CafeMilk: 18000,
+    CafeMilk: 20000,
     tea: 10000,
     lipton: 13000,
     lemon: 10000,
@@ -22,7 +22,8 @@ const Price = {
     mytrung: 20000,
     oplacamoi: 35000,
     baso: 35000,
-    conmeo: 25000
+    conmeo: 25000,
+    hotquet: 5000
 };
 
 function getInfo() {

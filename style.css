@@ -21,6 +21,7 @@ input {
 }
 .is-form-minus {
 	background-color: #de4747;
+	width: 25px;
 }
 .is-form {
 	background-color: #3de364;

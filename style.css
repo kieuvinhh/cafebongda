@@ -1,3 +1,6 @@
+body > div {
+	margin: auto;
+}
 h3 {
     font-size: 15px;
 }
@@ -5,8 +8,23 @@ h3 {
 button {
     padding: 3px 5px;
     background-color: #F002;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
 }
 
 input {
     font-size: 15px;
+}
+
+.tt {
+	font-size: 20px;
+	background-color: #ffff00;
+	cursor: pointer;
+}
+.is-form-minus {
+	background-color: #de4747;
+}
+.is-form {
+	background-color: #3de364;
 }

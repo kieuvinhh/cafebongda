@@ -1,8 +1,6 @@
-body > div {
-	margin: auto;
-}
 h3 {
     font-size: 25px;
+    margin: 10px;
 }
 
 button {

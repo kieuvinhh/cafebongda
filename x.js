@@ -48,7 +48,6 @@ function minus(name) {
 }
 
 function add(name, amount) {
-	console.log("123");
     let x = document.getElementById(name).value;
     x = parseInt(x) + parseInt(amount);
     document.getElementById(name).value = x;

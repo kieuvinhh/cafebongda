@@ -19,11 +19,11 @@ input {
 	background-color: #ffff00;
 	cursor: pointer;
 }
-.is-form-minus {
+.minus {
 	background-color: #de4747;
 	width: 25px;
 }
-.is-form {
+.plus {
 	background-color: #3de364;
 }
 

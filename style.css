@@ -27,6 +27,7 @@ input {
 	background-color: #3de364;
 }
 
-.is-form:focus {
+
+button:focus {
 	background-color: yellow;
 }

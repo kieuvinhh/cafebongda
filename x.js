@@ -3,7 +3,7 @@ const cafeStore = {};
 var prices = 0;
 
 const Price = {
-    Cafe: 13000,
+    Cafe: 15000,
     CafeMilk: 20000,
     tea: 10000,
     lipton: 13000,

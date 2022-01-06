@@ -78,3 +78,7 @@ button:focus {
 .title1 {
   background-color: #3edde6;
 }
+.DateTime {
+  font-size: 2vw;
+  font: bold;
+}

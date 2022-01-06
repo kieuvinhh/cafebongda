@@ -53,3 +53,17 @@ function add(name, amount) {
     x = parseInt(x) + parseInt(amount);
     document.getElementById(name).value = x;
 }
+
+//Pad given value to the left with "0"
+function AddZero(num) {
+    return (num >= 0 && num < 10) ? "0" + num : num + "";
+}
+
+window.onload = function() {
+    var now = new Date();
+    var strDateTime = [AddZero(now.getDate()),AddZero(now.getMonth() + 1),now.getFullYear()].join("/")
+    var Time = [AddZero(now.getHours()),AddZero(now.getMinutes())].join(":");
+    document.getElementById("Console").innerHTML = "Hôm nay: " + strDateTime;   
+    document.getElementById("Console1").innerHTML = "Giờ: " + Time;
+
+};

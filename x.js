@@ -37,7 +37,7 @@ function getInfo() {
             prices = prices + temp;
         }
     }
-    document.getElementById("Total").innerHTML = prices;
+    document.getElementById("Total").innerHTML = prices.toLocaleString('it-IT', {style : 'currency', currency : 'VND'});
     prices = 0;
 }
 

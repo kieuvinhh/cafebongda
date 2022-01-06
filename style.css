@@ -1,33 +1,60 @@
 h3 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 button {
-    padding: 4px 4px;
-    background-color: #F001;
-    border-radius: 50px;
-    cursor: pointer;
-    outline: none;
+  padding: 4px 4px;
+  background-color: #f001;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
 }
 
 input {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .tt {
-	font-size: 20px;
-	background-color: #ffff00;
-	cursor: pointer;
+  font-size: 40px;
+  background-color: #ffff00;
+  cursor: pointer;
 }
 .minus {
-	background-color: #de4747;
-	width: 25px;
+  background-color: #de4747;
+  width: 25px;
 }
 .plus {
-	background-color: #3de364;
+  background-color: #3de364;
 }
 
-
 button:focus {
-	background-color: yellow;
+  background-color: yellow;
+}
+
+.regularly {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.regularly1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.regulaly2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.regulaly3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.regulaly4 {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }

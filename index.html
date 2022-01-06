@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" >
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-<link rel="stylesheet" href="style.css">
-<title>Tinh Tien</title>
+<html lang="en">
+<head>
+  <title>Tinh Tien</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+<h1>Các loại cà phê</h1>
 
-  <h2>Cafe :
+<div class="regularly"> 
+  <div id="cf" class="item">
+    <h2>Cafe: 
     <button onclick="minus('Cafe')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
     <input aria-label="Cafe" class="input-qty" max="998" min="0" name="Cafe" id="Cafe" type="number" value="0">
     <button onclick="add('Cafe', 1)" class="plus is-form" type="button" value="+">+1</button>
@@ -13,9 +18,10 @@
     <button onclick="add('Cafe', 3)" class="plus is-form" type="button" value="+">+3.</button>
     <button onclick="add('Cafe', 4)" class="plus is-form" type="button" value="+">+4.</button>
     <button onclick="add('Cafe', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
+    </h2>
+  </div>  <!-- end Cafe-->
 
-
+  <div id="cfs" class="item">
   <h2>Cafe Sữa:
     <button onclick="minus('CafeMilk')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
     <input aria-label="CafeMilk" class="input-qty" max="999" min="0" name="CafeMilk" id="CafeMilk" type="number" value="0">
@@ -25,185 +31,252 @@
     <button onclick="add('CafeMilk', 4)" class="plus is-form" type="button" value="+">+4.</button>
     <button onclick="add('CafeMilk', 5)" class="plus is-form" type="button" value="+">+5.</button>
   </h2>
+  </div> <!-- end Cafe Sua-->
 
-  <h2>Trà Đường :
-    <button onclick="minus('tea')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="tea" class="input-qty" max="999" min="0" name="tea" id="tea" type="number" value="0">
-    <button onclick="add('tea', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('tea', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('tea', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('tea', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('tea', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
+  <div class="item" id="td">
+    <h2>Trà Đường :
+      <button onclick="minus('tea')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="tea" class="input-qty" max="999" min="0" name="tea" id="tea" type="number" value="0">
+      <button onclick="add('tea', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('tea', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('tea', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('tea', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('tea', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div> <!--end Tra Duong-->
+  <div class="item" id="lt">    
+    <h2>Lipton :
+      <button onclick="minus('lipton')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="lipton" class="input-qty" max="999" min="0" name="lipton" id="lipton" type="number" value="0">
+      <button onclick="add('lipton', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('lipton', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('lipton', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('lipton', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('lipton', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div> <!--end Lipton-->
 
-  <h2>Lipton :
-    <button onclick="minus('lipton')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="lipton" class="input-qty" max="999" min="0" name="lipton" id="lipton" type="number" value="0">
-    <button onclick="add('lipton', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('lipton', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('lipton', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('lipton', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('lipton', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
+  <div id="DC" class="item">
+    <h2>Đá Chanh :
+      <button onclick="minus('lemon')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="lemon" class="input-qty" max="999" min="0" name="lemon" id="lemon" type="number" value="0">
+      <button onclick="add('lemon', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('lemon', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('lemon', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('lemon', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('lemon', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div> <!--end Da Chanh-->
 
-  <h2>Đá Chanh :
-    <button onclick="minus('lemon')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="lemon" class="input-qty" max="999" min="0" name="lemon" id="lemon" type="number" value="0">
-    <button onclick="add('lemon', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('lemon', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('lemon', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('lemon', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('lemon', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
 
-  <h2>Rau Má :
-    <button onclick="minus('rauma')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="rauma" class="input-qty" max="999" min="0" name="rauma" id="rauma" type="number" value="0">
-    <button onclick="add('rauma', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('rauma', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('rauma', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('rauma', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('rauma', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
+  <div class="item" id="RM">
+    <h2>Rau Má :
+      <button onclick="minus('rauma')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="rauma" class="input-qty" max="999" min="0" name="rauma" id="rauma" type="number" value="0">
+      <button onclick="add('rauma', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('rauma', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('rauma', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('rauma', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('rauma', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div> <!--end Rau ma-->
 
-  <h2>Rau má sữa :
-    <button onclick="minus('raumasua')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="raumasua" class="input-qty" max="999" min="0" name="raumasua" id="raumasua" type="number" value="0">
-    <button onclick="add('raumasua', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('raumasua', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('raumasua', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('raumasua', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('raumasua', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
+<h1>Các loại rau má, dừa, cam</h1>  
+</div>
+<div class="regularly1"> 
+  <div class="item" id="RMS">
+    <h2>Rau má sữa :
+      <button onclick="minus('raumasua')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="raumasua" class="input-qty" max="999" min="0" name="raumasua" id="raumasua" type="number" value="0">
+      <button onclick="add('raumasua', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('raumasua', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('raumasua', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('raumasua', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('raumasua', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div> <!--end Lipton-->
 
-  <h2>Rau má dừa :
-    <button onclick="minus('raumadua')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="raumadua" class="input-qty" max="999" min="0" name="raumadua" id="raumadua" type="number" value="0">
-    <button onclick="add('raumadua', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('raumadua', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('raumadua', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('raumadua', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('raumadua', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
 
-  <h2>Dừa tươi :
-    <button onclick="minus('Dua')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="Dua" class="input-qty" max="999" min="0" name="Dua" id="Dua" type="number" value="0">
-    <button onclick="add('Dua', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('Dua', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('Dua', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('Dua', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('Dua', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
+  <div class="item" id="RMD">
+    <h2>Rau má dừa :
+      <button onclick="minus('raumadua')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="raumadua" class="input-qty" max="999" min="0" name="raumadua" id="raumadua" type="number" value="0">
+      <button onclick="add('raumadua', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('raumadua', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('raumadua', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('raumadua', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('raumadua', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div>  <!--end Rau ma Dua -->
+  <div class="item" id="DT">
+    <h2>Dừa tươi :
+      <button onclick="minus('Dua')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="Dua" class="input-qty" max="999" min="0" name="Dua" id="Dua" type="number" value="0">
+      <button onclick="add('Dua', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('Dua', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('Dua', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('Dua', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('Dua', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div>  <!--end Dua tuoi -->
 
-  <h2>Dừa tẩy :
-    <button onclick="minus('Duatay')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="Duatay" class="input-qty" max="999" min="0" name="Duatay" id="Duatay" type="number" value="0">
-    <button onclick="add('Duatay', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('Duatay', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('Duatay', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('Duatay', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('Duatay', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
+  <div class="item" id="DTT">
+    <h2>Dừa tẩy :
+      <button onclick="minus('Duatay')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="Duatay" class="input-qty" max="999" min="0" name="Duatay" id="Duatay" type="number" value="0">
+      <button onclick="add('Duatay', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('Duatay', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('Duatay', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('Duatay', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('Duatay', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div> 
 
-  <h2>Cam Vắt :
-    <button onclick="minus('orange')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="orange" class="input-qty" max="999" min="0" name="orange" id="orange" type="number" value="0">
-    <button onclick="add('orange', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('orange', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('orange', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('orange', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('orange', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
 
-  <h2> Cam Sữa :
-    <button onclick="minus('orangemilk')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="orangemilk" class="input-qty" max="999" min="0" name="orangemilk" id="orangemilk" type="number" value="0">
-    <button onclick="add('orangemilk', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('orangemilk', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('orangemilk', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('orangemilk', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('orangemilk', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
 
-  <h2> Đá me :
-    <button onclick="minus('dame')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="dame" class="input-qty" max="999" min="0" name="dame" id="dame" type="number" value="0">
-    <button onclick="add('dame', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('dame', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('dame', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('dame', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('dame', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
+  <div class="item" id="CV">
+    <h2>Cam Vắt :
+      <button onclick="minus('orange')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="orange" class="input-qty" max="999" min="0" name="orange" id="orange" type="number" value="0">
+      <button onclick="add('orange', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('orange', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('orange', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('orange', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('orange', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div>
 
-  <h2> Nước ngọt :
-    <button onclick="minus('nuocngot')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="nuocngot" class="input-qty" max="999" min="0" name="nuocngot" id="nuocngot" type="number" value="0">
-    <button onclick="add('nuocngot', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('nuocngot', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('nuocngot', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('nuocngot', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('nuocngot', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
 
-  <h2> Nước suối :
-    <button onclick="minus('nuocsuoi')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="nuocsuoi" class="input-qty" max="999" min="0" name="nuocsuoi" id="nuocsuoi" type="number" value="0">
-    <button onclick="add('nuocsuoi', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('nuocsuoi', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('nuocsuoi', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('nuocsuoi', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('nuocsuoi', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
+  <div class="item" id="CS">
+    <h2> Cam Sữa :
+      <button onclick="minus('orangemilk')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="orangemilk" class="input-qty" max="999" min="0" name="orangemilk" id="orangemilk" type="number" value="0">
+      <button onclick="add('orangemilk', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('orangemilk', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('orangemilk', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('orangemilk', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('orangemilk', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div>
 
-  <h2> Tẩy thêm :
-    <button onclick="minus('taythem')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="taythem" class="input-qty" max="999" min="0" name="taythem" id="taythem" type="number" value="0">
-    <button onclick="add('taythem', 1)" class="plus is-form" type="button" value="+">+1</button>
-    <button onclick="add('taythem', 2)" class="plus is-form" type="button" value="+">+2.</button>
-    <button onclick="add('taythem', 3)" class="plus is-form" type="button" value="+">+3.</button>
-    <button onclick="add('taythem', 4)" class="plus is-form" type="button" value="+">+4.</button>
-    <button onclick="add('taythem', 5)" class="plus is-form" type="button" value="+">+5.</button>
-  </h2>
+  <div class="item" id="DM">
+    <h2> Đá me :
+      <button onclick="minus('dame')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="dame" class="input-qty" max="999" min="0" name="dame" id="dame" type="number" value="0">
+      <button onclick="add('dame', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('dame', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('dame', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('dame', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('dame', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div>
 
-  <h2> Mỳ trứng :
-    <button onclick="minus('mytrung')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="mytrung" class="input-qty" max="999" min="0" name="mytrung" id="mytrung" type="number" value="0">
-    <button onclick="add('mytrung', 1)" class="plus is-form" type="button" value="+">+</button>
-  </h2>
 
-  <h2> Ốp la cá mòi :
-    <button onclick="minus('oplacamoi')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="oplacamoi" class="input-qty" max="999" min="0" name="oplacamoi" id="oplacamoi" type="number" value="0">
-    <button onclick="add('oplacamoi', 1)" class="plus is-form" type="button" value="+">+</button>
-  </h2>
+</div>
 
-  <h2> Ba số :
-    <button onclick="minus('baso')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="baso" class="input-qty" max="999" min="0" name="baso" id="baso" type="number" value="0">
-    <button onclick="add('baso', 1)" class="plus is-form" type="button" value="+">+</button>
-  </h2>
+<h1>Nước ngọt, nước suối, tẩy thêm</h1>
+<div class="regulaly2">
+  <div class="item" id="NN">
+    <h2> Nước ngọt :
+      <button onclick="minus('nuocngot')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="nuocngot" class="input-qty" max="999" min="0" name="nuocngot" id="nuocngot" type="number" value="0">
+      <button onclick="add('nuocngot', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('nuocngot', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('nuocngot', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('nuocngot', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('nuocngot', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div>
 
-  <h2> Hero :
-    <button onclick="minus('hero')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="hero" class="input-qty" max="999" min="0" name="hero" id="hero" type="number" value="0">
-    <button onclick="add('hero', 1)" class="plus is-form" type="button" value="+">+</button>
-  </h2>
+  <div class="item" id="NS">
+    <h2> Nước suối :
+      <button onclick="minus('nuocsuoi')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="nuocsuoi" class="input-qty" max="999" min="0" name="nuocsuoi" id="nuocsuoi" type="number" value="0">
+      <button onclick="add('nuocsuoi', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('nuocsuoi', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('nuocsuoi', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('nuocsuoi', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('nuocsuoi', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div>
+  <div class="item" id="TTT">
+    <h2> Tẩy thêm :
+      <button onclick="minus('taythem')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="taythem" class="input-qty" max="999" min="0" name="taythem" id="taythem" type="number" value="0">
+      <button onclick="add('taythem', 1)" class="plus is-form" type="button" value="+">+1</button>
+      <button onclick="add('taythem', 2)" class="plus is-form" type="button" value="+">+2.</button>
+      <button onclick="add('taythem', 3)" class="plus is-form" type="button" value="+">+3.</button>
+      <button onclick="add('taythem', 4)" class="plus is-form" type="button" value="+">+4.</button>
+      <button onclick="add('taythem', 5)" class="plus is-form" type="button" value="+">+5.</button>
+    </h2>
+  </div>  
 
-  <h2> Mèo :
-    <button onclick="minus('conmeo')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="conmeo" class="input-qty" max="999" min="0" name="conmeo" id="conmeo" type="number" value="0">
-    <button onclick="add('conmeo', 1)" class="plus is-form" type="button" value="+">+</button>
-  </h2>
+</div>
 
-  <h2> Hột quẹt :
-    <button onclick="minus('hotquet')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
-    <input aria-label="hotquet" class="input-qty" max="999" min="0" name="hotquet" id="hotquet" type="number" value="0">
-    <button onclick="add('hotquet', 1)" class="plus is-form" type="button" value="+">+</button>
-  </h2>
-  <button onclick="getInfo()" class="tt">Tính tiền</button>
-  <h1> Tổng Tiền: <span id="Total">0</span> VNĐ</h1>
-  <script type="text/javascript" src="./x.js"></script>
+
+
+<h1>Các loại đồ ăn</h1>
+<div class="regulaly3">
+  <div class="item" id="MT">
+    <h2> Mỳ trứng :
+      <button onclick="minus('mytrung')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="mytrung" class="input-qty" max="999" min="0" name="mytrung" id="mytrung" type="number" value="0">
+      <button onclick="add('mytrung', 1)" class="plus is-form" type="button" value="+">+</button>
+    </h2>
+  </div>
+  <div class="item" id="OLCM">
+    <h2> Ốp la cá mòi :
+      <button onclick="minus('oplacamoi')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="oplacamoi" class="input-qty" max="999" min="0" name="oplacamoi" id="oplacamoi" type="number" value="0">
+      <button onclick="add('oplacamoi', 1)" class="plus is-form" type="button" value="+">+</button>
+    </h2>
+  </div>
+</div>
+
+<h1> Các loại thuốc </h1>
+<div class="regulaly4">
+
+  <div class="item" id="BS">
+    <h2> Ba số :
+      <button onclick="minus('baso')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="baso" class="input-qty" max="999" min="0" name="baso" id="baso" type="number" value="0">
+      <button onclick="add('baso', 1)" class="plus is-form" type="button" value="+">+</button>
+    </h2>
+  </div>
+
+  <div class="item" id="HR">
+    <h2> Hero :
+      <button onclick="minus('hero')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="hero" class="input-qty" max="999" min="0" name="hero" id="hero" type="number" value="0">
+      <button onclick="add('hero', 1)" class="plus is-form" type="button" value="+">+</button>
+    </h2>
+  </div>
+
+
+  <div class="item" id="MEO">
+    <h2> Mèo :
+      <button onclick="minus('conmeo')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="conmeo" class="input-qty" max="999" min="0" name="conmeo" id="conmeo" type="number" value="0">
+      <button onclick="add('conmeo', 1)" class="plus is-form" type="button" value="+">+</button>
+    </h2>
+  </div>
+
+  <div class="item" id="HQ">
+    <h2> Hột quẹt :
+      <button onclick="minus('hotquet')" class="minus is-form-minus" type="button" name="minus" value="-">-</button>
+      <input aria-label="hotquet" class="input-qty" max="999" min="0" name="hotquet" id="hotquet" type="number" value="0">
+      <button onclick="add('hotquet', 1)" class="plus is-form" type="button" value="+">+</button>
+    </h2>
+  </div>
+
+</div>
+
+<div class="Total">
+<button onclick="getInfo()" class="tt">Tính tiền</button>
+<h1> Tổng Tiền: <span id="Total">0</span> VNĐ</h1>
+</div>
+<script type="text/javascript" src="./x.js"></script>
 </body>
+
 
 </html>

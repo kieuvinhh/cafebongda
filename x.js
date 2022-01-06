@@ -3,7 +3,7 @@ const cafeStore = {};
 var prices = 0;
 
 const Price = {
-    Cafe: 15000,
+    Cafe: 13000,
     CafeMilk: 20000,
     tea: 10000,
     lipton: 13000,
@@ -17,10 +17,11 @@ const Price = {
     orangemilk: 20000,
     dame: 15000,
     nuocngot: 15000,
-    nuocsuoi: 10000,
+    nuocsuoi: 6000,
     taythem: 5000,
     mytrung: 20000,
     oplacamoi: 35000,
+    hero: 22000,
     baso: 35000,
     conmeo: 25000,
     hotquet: 5000

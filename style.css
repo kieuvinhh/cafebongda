@@ -55,6 +55,7 @@ button:focus {
 .item6 {
   grid-column: 2;
 }
+
 .regularly1 {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -72,4 +73,8 @@ button:focus {
 .regulaly4 {
   display: grid;
   grid-template-columns: auto auto auto;
+}
+
+.title1 {
+  background-color: #3edde6;
 }

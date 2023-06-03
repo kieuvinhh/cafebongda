@@ -1,40 +1,65 @@
-h3 {
-  font-size: 16px;
-}
-
 button {
-  padding: 4px 4px;
-  background-color: #f001;
-  border-radius: 50px;
-  cursor: pointer;
-  outline: none;
+  
+}
+@media screen and (min-width: 300px){
+  .regularly .regularly1 .regularly2 .regularly3{
+    display: inline-block;
+  }
+  .outbound-button {
+    display: flex;
+  }
+  .tt {
+    font-size: 4vh;
+    background-color: #ffff00;
+    cursor: pointer;
+  }
 }
 
 input {
-  font-size: 1.5vw;
+  font-size: 3vh;
 }
 
-.tt {
-  font-size: 40px;
-  background-color: #ffff00;
-  cursor: pointer;
-}
+
+
 .minus {
   background-color: #de4747;
-  width: 25px;
+  height: 5vh;
+  line-height: 5vh;  
+  width: 5vh;  
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  display: inline-grid;
 }
 .plus {
   background-color: #3de364;
+  height: 5vh;
+  line-height: 5vh;  
+  width: 5vh;  
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  display: inline-flex;
 }
 
 button:focus {
   background-color: yellow;
 }
 
-.regularly {
+@media screen and (min-width: 600px){
+  .regularly .regularly1 .regularly2 .regularly3 .regularly4 {
   display: grid;
   grid-template-columns: auto auto;
+  }
+  .tt {
+    font-size: 4vw;
+    background-color: #ffff00;
+    cursor: pointer;
+  }
 }
+
 
 .item1 {
   grid-column: 1;
@@ -56,24 +81,7 @@ button:focus {
   grid-column: 2;
 }
 
-.regularly1 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
 
-.regulaly2 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-.regulaly3 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-.regulaly4 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
 
 .title1 {
   background-color: #3edde6;

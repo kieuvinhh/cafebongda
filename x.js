@@ -22,8 +22,8 @@ const Price = {
     mytrung: 20000,
     oplacamoi: 35000,
     hero: 22000,
-    baso: 35000,
-    conmeo: 25000,
+    baso: 37000,
+    conmeo: 27000,
     hotquet: 5000
 };
 

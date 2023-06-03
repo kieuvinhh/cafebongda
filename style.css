@@ -24,6 +24,7 @@
     margin-right: 1px;
     border-width: 3px;
     justify-content: center;
+    border-color: black;
   }
   .plus {
     background-color: #3de364;
@@ -36,7 +37,9 @@
     cursor: pointer;
     display: inline-flex;
     margin: 2.5px;
+    border-width: 3px;
     justify-content: center;
+    border-color: black;
   }
   input {
   font-size: 3vh;
@@ -90,6 +93,9 @@
     cursor: pointer;
     display: inline-flex;
     border-style: solid;
+    border-width: 3px;
+    justify-content: center;
+    border-color: black;
   }
   .plus {
     background-color: #3de364;
@@ -102,6 +108,9 @@
     cursor: pointer;
     display: inline-flex;
     border-style: solid;
+    border-width: 3px;
+    justify-content: center;
+    border-color: black;
   }
   input {
   font-size: 3vh;
@@ -111,9 +120,6 @@
     font-size: 2em;
   }
 }
-
-
-
 
 
 button:focus {

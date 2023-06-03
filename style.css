@@ -85,6 +85,7 @@
     text-align: center;
     cursor: pointer;
     display: inline-flex;
+    border-style: solid;
   }
   .plus {
     background-color: #3de364;
@@ -96,6 +97,7 @@
     text-align: center;
     cursor: pointer;
     display: inline-flex;
+    border-style: solid;
   }
   input {
   font-size: 3vh;

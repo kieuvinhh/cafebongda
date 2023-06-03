@@ -1,9 +1,6 @@
-button {
-  
-}
 @media screen and (min-width: 300px){
   .regularly .regularly1 .regularly2 .regularly3{
-    display: inline-block;
+    display: block;
   }
   .outbound-button {
     display: flex;
@@ -13,6 +10,44 @@ button {
     background-color: #ffff00;
     cursor: pointer;
   }
+}
+
+@media screen and (min-width: 500px){
+  .regularly {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .regularly1 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .regularly2 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .regularly3 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .regularly4 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .tt {
+    font-size: 4vw;
+    background-color: #ffff00;
+    cursor: pointer;
+  }
+  .outbound-button {
+    display: inherit;
+  }
+  .item1 .item3 .item5 {
+    grid-column: 1;
+  }
+  .item2 .item4 .item6 {
+    grid-column: 2;
+  }
+
 }
 
 input {
@@ -30,7 +65,7 @@ input {
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
-  display: inline-grid;
+  display: inline-flex;
 }
 .plus {
   background-color: #3de364;
@@ -46,39 +81,6 @@ input {
 
 button:focus {
   background-color: yellow;
-}
-
-@media screen and (min-width: 600px){
-  .regularly .regularly1 .regularly2 .regularly3 .regularly4 {
-  display: grid;
-  grid-template-columns: auto auto;
-  }
-  .tt {
-    font-size: 4vw;
-    background-color: #ffff00;
-    cursor: pointer;
-  }
-}
-
-
-.item1 {
-  grid-column: 1;
-}
-.item2 {
-  grid-column: 2;
-}
-
-.item3 {
-  grid-column: 1;
-}
-.item4 {
-  grid-column: 2;
-}
-.item5 {
-  grid-column: 1;
-}
-.item6 {
-  grid-column: 2;
 }
 
 

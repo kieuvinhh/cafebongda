@@ -10,6 +10,34 @@
     background-color: #ffff00;
     cursor: pointer;
   }
+  .minus {
+    background-color: #de4747;
+    height: 4vh;
+    line-height: 4vh;  
+    width: 4vh;  
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: inline-flex;
+    margin-right: 2px;
+  }
+  .plus {
+    background-color: #3de364;
+    height: 4vh;
+    line-height: 4vh;  
+    width: 4vh;  
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: inline-flex;
+    margin: 4px;
+  }
+  input {
+  font-size: 3vh;
+  margin: 3px;
+}
 }
 
 @media screen and (min-width: 500px){
@@ -47,37 +75,40 @@
   .item2 .item4 .item6 {
     grid-column: 2;
   }
-
-}
-
-input {
+  .minus {
+    background-color: #de4747;
+    height: 6vh;
+    line-height: 6vh;  
+    width: 6vh;  
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: inline-flex;
+  }
+  .plus {
+    background-color: #3de364;
+    height: 6vh;
+    line-height: 6vh;  
+    width: 6vh;  
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: inline-flex;
+  }
+  input {
   font-size: 3vh;
+  margin: 3px;
+  }
+  h2 {
+    font-size: 2em;
+  }
 }
 
 
 
-.minus {
-  background-color: #de4747;
-  height: 5vh;
-  line-height: 5vh;  
-  width: 5vh;  
-  font-weight: bold;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  display: inline-flex;
-}
-.plus {
-  background-color: #3de364;
-  height: 5vh;
-  line-height: 5vh;  
-  width: 5vh;  
-  font-weight: bold;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  display: inline-flex;
-}
+
 
 button:focus {
   background-color: yellow;
